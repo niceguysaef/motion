@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="loginStyles.css">
+  <script src="meatandbones.js" defer></script>
+  <title>Login/Register</title>
+</head>
+<body>
+  <style>
+    body {
+        background-image: url('images/snkrBg.jpg');
+        background-size:contain; 
+        background-repeat:repeat;
+        background-attachment:fixed;
+      }
+    </style>
+  <nav class="navbar">
+    <div class="navbarcontainer">
+        <a href="C:\Users\Saef\Desktop\Web Assignment\index.html" id="navbarlogo">MOTION</a>
+        <ul class="navbarmenu">
+            <li class="navbaritem">
+                <a href="C:\Users\Saef\Desktop\Web Assignment\latestDrops.html" class="navbarlinks">Latest Drops</a>
+            </li>
+            <li class="navbaritem">
+                <a href="C:\Users\Saef\Desktop\Web Assignment\categories.html" class="navbarlinks">Categories</a>
+            </li>
+            <li class="navbaritem">
+                <a href="C:\Users\Saef\Desktop\Web Assignment\sales.html" class="navbarlinks">Sale</a>
+            </li>
+            <li class="navbaritem">
+                <a href="C:\Users\Saef\Desktop\Web Assignment\contactUs.html" class="navbarlinks">Contact Us</a>
+            </li>
+        </ul>
+        <a class="shopping-cart-link" title="Shopping Cart">
+            <img src="images/cart.webp"  class="shopping-cart-icon">
+        </a>
+        <a href="C:\Users\Saef\Desktop\Web Assignment\loginPage.html" class="login-link" title="Login/Register">
+            <img src="images/login.png"  class="login-icon">
+        </a>
+        <a class="search-link" title="Search">
+            <img src="images/search.png"  class="search-icon">
+        </a>
+    </div>
+  </nav>
+    <div id='login-form'class='login-page'>
+    <div id="message-container"></div>
+    <div class="loginBox">
+      <div class='li-re-buttons'>
+        <div id='liReSlider'></div>
+        <button type='button'onclick='login()'class='btnSlider'>Log In</button>
+        <button type='button'onclick='register()'class='btnSlider'>Register</button>
+      </div>
+      <form id='login' class='loginInput'>
+        <input type='email'class='liReInput'placeholder='Email' name='email' required >
+        <input type='password'class='liReInput'placeholder='Password' name='password' required>
+        <input type='checkbox'class='check-box'><span>Remember Password</span>
+        <button type='submit' class='submissionBtn' onclick="finalLogBtn(); return false;">Log In</button>
+      </form>
+      <form id='register' class='registerInput'>
+        <input type='text' class='liReInput' placeholder='First Name' name='firstName' required>
+        <input type='text' class='liReInput' placeholder='Last Name' name='lastName' required>
+        <input type='email' class='liReInput' placeholder='Email' name='email' required>
+        <input type='password' class='liReInput' placeholder='Password' name='password' required>
+        <input type='password' class='liReInput' placeholder='Confirm Password' name='confirmPassword' required>
+        <input type='checkbox' class='check-box' name='terms' required><span>I agree to the terms and conditions</span>
+        <button type='submit' class='submissionBtn' onclick="finalRegBtn(); return false;">Register</button>
+      </form>    
+    </div>
+    <footer>
+        <div class="leftFooter">
+            <div class="footerMenu">
+                <h1 class="footerTitle">Shop</h1>
+                <ul class="leftFooterList">
+                    <li class="leftListItems"><a href="C:\Users\Saef\Desktop\Web Assignment\latestDrops.html">Latest Drops</a></li>
+                    <li class="leftListItems"><a>Collabs</a></li> 
+                    <li class="leftListItems"><a>Shoes</a></li> 
+                    <li class="leftListItems"><a href="C:\Users\Saef\Desktop\Web Assignment\sales.html">Sale</a></li> 
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="footerTitle">About</h1>
+                <ol class="leftFooterList">
+                    <li class="leftListItems"><a>About Us</a></li>
+                    <li class="leftListItems"><a href="C:\Users\Saef\Desktop\Web Assignment\contactUs.html">Contact Us</a></li> 
+                    <li class="leftListItems"><a>Our Stores</a></li> 
+                </ol>
+            </div>
+            <div class="footerMenu">
+                <h1 class="footerTitle">Support</h1>
+                <ul class="leftFooterList">
+                    <li class="leftListItems"><a>Shipping</a></li>
+                    <li class="leftListItems"><a>Returns</a></li> 
+                    <li class="leftListItems"><a>Terms & Conditions</a></li> 
+                    <li class="leftListItems"><a>FAQ</a></li>  
+                </ul>
+            </div>
+            
+        </div>
+        <div class="rightFooter">
+            <div class="rightFooterMenu">
+                <h1 class="rightFooterTitle">Subscribe to get news about our latest drops, free giveaways, and once-in-a-lifetime deals.</h1>
+                <div class="footerEmail">
+                    <input type="text" placeholder="Enter your email" class="footerInput">
+                    <button class="footerButton">Join!</button>
+                </div>
+            </div>
+            <div class="rightFooterMenu">
+                <h1 class="rightFooterTitle">Get Connected</h1>
+                <div class="footerIcons">
+                    <a href="https://wa.link/l7bqy0" target="_blank" class="footerIconLink">
+                        <img src="images/whatsapp.png" alt="" class="footerIcon">
+                    </a>
+                    <a target="_blank" class="footerIconLink">
+                        <img src="images/instagram.png" alt="" class="footerIcon">
+                    </a>
+                    <a target="_blank" class="footerIconLink">
+                        <img src="images/twitter.png" alt="" class="footerIcon">
+                    </a>
+                    <a target="_blank" class="footerIconLink">
+                        <img src="images/facebook.png" alt="" class="footerIcon">
+                    </a>
+                </div>
+                
+            </div>
+            <div class="rightFooterMenu">
+                <div class="copyright">&copy MOTION INC. All rights reserved. 2023. <br>Created on: 20/11/2023<br>Last updated on: 22/12/2023</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

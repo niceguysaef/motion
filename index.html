@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTION</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="meatandbones.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbarcontainer">
+            <a href="C:\Users\Saef\Desktop\Web Assignment\index.html" id="navbarlogo">MOTION</a>
+            <ul class="navbarmenu">
+                <li class="navbaritem">
+                    <a href="C:\Users\Saef\Desktop\Web Assignment\latestDrops.html" class="navbarlinks">Latest Drops</a>
+                </li>
+                <li class="navbaritem">
+                    <a href="C:\Users\Saef\Desktop\Web Assignment\categories.html" class="navbarlinks">Categories</a>
+                </li>
+                <li class="navbaritem">
+                    <a href="C:\Users\Saef\Desktop\Web Assignment\sales.html" class="navbarlinks">Sale</a>
+                </li>
+                <li class="navbaritem">
+                    <a href="C:\Users\Saef\Desktop\Web Assignment\contactUs.html" class="navbarlinks">Contact Us</a>
+                </li>
+            </ul>
+            <a class="shopping-cart" title="Shopping Cart">
+                <img src="images/cart.webp"  class="shopping-cart-icon">
+            </a>
+            <a href="C:\Users\Saef\Desktop\Web Assignment\loginPage.html" class="login-link" title="Login/Register">
+                <img src="images/login.png"  class="login-icon">
+            </a>
+            <a class="search" title="Search">
+                <img src="images/search.png"  class="search-icon">
+            </a>
+        </div>
+    </nav>   
+    <div class="imageSlideshow">
+        <div class="mySlides fade" style="display: block;">
+            <div class="slideNumber">1 / 4</div>
+            <a href="C:\Users\Saef\Desktop\Web Assignment\humanMade.html">
+                <img src="images/humanmade.webp" alt="Humanmade" class="imageShown">
+                <div class="slideName">Humanmade <br>Autumn Winter 2023</br></div>
+            </a>
+        </div>
+        <div class="mySlides fade">
+            <div class="slideNumber">2 / 4</div>
+            <a href="C:\Users\Saef\Desktop\Web Assignment\TNT.html"> 
+                <img src="images/felix.webp" alt="ThisNeverThat X Felix the Cat" class="imageShown">
+                <div class="slideName">ThisIsNeverThat X Felix the Cat</div>
+            </a>
+        </div>
+        <div class="mySlides fade">
+            <div class="slideNumber">3 / 4</div>
+            <a href="C:\Users\Saef\Desktop\Web Assignment\newBalance.html">
+                <img src="images/newBalance.webp" alt="New Balance" class="imageShown">
+                <div class="slideName">New Balance <br>MADE in USA Fall/Winter Collection</br></div>
+            </a>
+        </div>
+        <div class="mySlides fade">
+            <div class="slideNumber">4 / 4</div>
+            <a href="C:\Users\Saef\Desktop\Web Assignment\nike.html"> 
+                <img src="images/AF1.jpeg" alt="AF1" class="imageShown">
+                <div class="slideName">Nike Air Force 1</div>
+            </a>
+        </div>
+    </div>
+        <a class="prevSlide" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="nextSlide" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align: center">
+        <span class="slideDot" onclick="currentSlide(1)"></span>
+        <span class="slideDot" onclick="currentSlide(2)"></span>
+        <span class="slideDot" onclick="currentSlide(3)"></span>
+        <span class="slideDot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <div class="latest-drops">
+        <h2>Latest Drops</h2>
+        <div class="newDrops">
+            <a class="latest-image-link">
+                <img src="images/pandas.jpg" alt="Latest Arrival 1" class="newDrop1">
+                <p>Nike Dunk Low <br>"Panda"</br><br>RM439.00</br></p>
+            </a>
+            <a class="latest-image-link">
+                <img src="images/nbUSA.png" alt="Latest Arrival 1" class="newDrop1">
+                <p>New Balance Made In USA<br>"998 Core"</br><br>RM1169.00</br></p>
+            </a>
+            <a class="latest-image-link">
+                <img src="images/humanMadeCap.png" alt="Latest Arrival 1" class="newDrop1">
+                <p>Human Made<br>"6 Panel Corduroy Cap"</br><br>RM329.90</br></p>
+            </a>
+            <a class="latest-image-link">
+                <img src="images/humanMadeSweater.png" alt="Latest Arrival 1" class="newDrop1">
+                <p>Human Made<br>"Dachs Knit Sweater"</br><br>RM1999.90</br></p>
+            </a>
+            <a class="latest-image-link">
+                <img src="images/tntShirt.png" alt="Latest Arrival 1" class="newDrop1">
+                <p>TNT<br>"Logo Tee"</br><br>RM229.90</br></p>
+            </a>
+            <a class="latest-image-link">
+                <img src="images/humanMadeBag.png" alt="Latest Arrival 1" class="newDrop1">
+                <p>Human Made<br>"Paperboy Bag"</br><br>RM569.90</br></p>
+            </a>
+            <a class="latest-image-link">
+                <img src="images/felixShirt-PhotoRoom.png-PhotoRoom.png" alt="Latest Arrival 1" class="newDrop1">
+                <p>TNT<br>"ThisIsNeverThat X Felix The Cat Tee"</br><br>439.00</br></p>
+            </a> 
+            <a class="latest-image-link">
+                <img src="images/tntBomberJacket.jpg" alt="Latest Arrival 1" class="newDrop1">
+                <p>TNT<br>"Felix Bomber Jacket"</br><br>RM1399.90</br></p>
+            </a>
+            <a class="latest-image-link">
+                <img src="images/tntPants.png" alt="Latest Arrival 1" class="newDrop1">
+                <p>TNT<br>"ThisIsNeverThat Velour Pants"</br><br>RM800.00</br></p>
+            </a>
+        </div>
+    </div>
+
+    <div class="view-more">
+        <button class="view-more-button" onclick="window.location.href='file:/C:/Users/Saef/Desktop/Web%20Assignment/latestDrops.html'">View More</button>
+    </div>
+    
+    
+
+    <div class="image-container">
+        <a href="C:\Users\Saef\Desktop\Web Assignment\TNT.html" class="fadingImage">
+            <img src="images/thisneverthat.webp" alt="Image 1">
+            <p class="image-title">ThisIsNeverThat</p>
+        </a>
+        <a href="C:\Users\Saef\Desktop\Web Assignment\nike.html" class="fadingImage">
+            <img src="images/nikeModel.jpg" alt="Image 2">
+            <p class="image-title">Nike</p>
+        </a>
+        <a href="C:\Users\Saef\Desktop\Web Assignment\newBalance.html" class="fadingImage">
+            <img src="images/newBalanceModel.webp" alt="Image 3">
+            <p class="image-title">New Balance</p>
+        </a>
+        <a href="C:\Users\Saef\Desktop\Web Assignment\humanMade.html" class="fadingImage">
+            <img src="images/800x.jpg" alt="Image 4">
+            <p class="image-title">Human Made</p>
+        </a>
+    </div>
+
+    <footer>
+        <div class="leftFooter">
+            <div class="footerMenu">
+                <h1 class="footerTitle">Shop</h1>
+                <ul class="leftFooterList">
+                    <li class="leftListItems"><a href="C:\Users\Saef\Desktop\Web Assignment\latestDrops.html">Latest Drops</a></li>
+                    <li class="leftListItems"><a>Collabs</a></li> 
+                    <li class="leftListItems"><a>Shoes</a></li> 
+                    <li class="leftListItems"><a href="C:\Users\Saef\Desktop\Web Assignment\sales.html">Sale</a></li> 
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="footerTitle">About</h1>
+                <ul class="leftFooterList">
+                    <li class="leftListItems"><a>About Us</a></li>
+                    <li class="leftListItems"><a href="C:\Users\Saef\Desktop\Web Assignment\contactUs.html">Contact Us</a></li> 
+                    <li class="leftListItems"><a>Our Stores</a></li> 
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="footerTitle">Support</h1>
+                <ul class="leftFooterList">
+                    <li class="leftListItems"><a>Shipping</a></li>
+                    <li class="leftListItems"><a>Returns</a></li> 
+                    <li class="leftListItems"><a>Terms & Conditions</a></li> 
+                    <li class="leftListItems"><a>FAQ</a></li>  
+                </ul>
+            </div>
+        </div>
+
+        <div class="rightFooter">
+            <div class="rightFooterMenu">
+                <h1 class="rightFooterTitle">Subscribe to get news about our latest drops, free giveaways, and once-in-a-lifetime deals.</h1>
+                <div class="footerEmail">
+                    <input type="text" placeholder="Enter your email" class="footerInput">
+                    <button class="footerButton">Join!</button>
+                </div>
+            </div>
+            <div class="rightFooterMenu">
+                <h1 class="rightFooterTitle">Get Connected</h1>
+                <div class="footerIcons">
+                    <a href="https://wa.link/l7bqy0" target="_blank" class="footerIconLink">
+                        <img src="images/whatsapp.png" alt="" class="footerIcon">
+                    </a>
+                    <a href="https://wa.link/l7bqy0" target="_blank" class="footerIconLink">
+                        <img src="images/instagram.png" alt="" class="footerIcon">
+                    </a>
+                    <a href="https://wa.link/l7bqy0" target="_blank" class="footerIconLink">
+                        <img src="images/twitter.png" alt="" class="footerIcon">
+                    </a>
+                    <a href="https://wa.link/l7bqy0" target="_blank" class="footerIconLink">
+                        <img src="images/facebook.png" alt="" class="footerIcon">
+                    </a>
+                </div>
+                
+            </div>
+            <div class="rightFooterMenu">
+                <span class="copyright">&copy MOTION INC. All rights reserved. 2023. <br>Created on: 20/11/2023<br>Last updated on: 22/12/2023</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
